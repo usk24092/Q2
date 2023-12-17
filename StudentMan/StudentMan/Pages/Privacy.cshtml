@@ -1,0 +1,29 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>This is view Page</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student's ID</th>
+            <th>Student's Name</th>
+            <th>Student's City</th>
+            <th>Student's Course ID</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model.Students)
+        {
+            <tr>
+                <td>@student.Student_Id</td>
+                <td>@student.Name</td>
+                <td>@student.City</td>
+                <td>@student.CourseID</td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
