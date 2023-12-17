@@ -1,0 +1,14 @@
+A.	use [StudentMan.Data]
+select * from Student
+
+B.	use [StudentMan.Data]
+
+select Student_Id, Name, City from Student where City='kandy'
+
+C.	use [StudentMan.Data]
+
+update Student set City = 'Galle' where Student_Id=4
+
+D.	use [StudentMan.Data]
+
+select Student.Student_Id, Student.Name, Student.City, Course.Name from Student join Course on Student.CourseID = Course.CourseID
